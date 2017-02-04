@@ -11,9 +11,7 @@ export class AppComponent {
   keyword = '';
 
   data: any;
-	constructor(private datasvc: DataService) {
-    this.data = datasvc.data;
-	}
+	constructor(public datasvc: DataService) {}
 
 
   doSearch(str) {

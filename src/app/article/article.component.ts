@@ -13,14 +13,8 @@ export class ArticleComponent implements OnInit {
 
   constructor(public datasvc: DataService) {  }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
   ngOnChanges() {}
-  ngDoCheck () {}
+  ngDoCheck() {}
 
-  deleteMe(item) {
-    // this.delete.emit(item);
-    this.datasvc.deleteArticle(item);
-  }
 }
