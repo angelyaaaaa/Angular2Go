@@ -29,7 +29,7 @@
 
       <div class="pull-left">
         <h1><a [href]="homeUrl">The Will Will Web</a></h1>
-        <h3 class="highlight">{{pageTitle}}</h3>
+        <h3 class="highlight" (click)="plusOne($event)" (copy)="copyRightWarning($event)">{{pageTitle}}{{count}}</h3>
       </div>
 
       <div id="social-icons" class="pull-right social-icon">
