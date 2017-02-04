@@ -1,4 +1,6 @@
+import { DataService } from './../data.service';
 import { Input, Output, Component, EventEmitter, OnInit, OnChanges, DoCheck } from '@angular/core';
+
 
 @Component({
   selector: 'app-article',
@@ -12,7 +14,8 @@ export class ArticleComponent implements OnInit {
   @Output()
   delete = new EventEmitter<any>();
 
-  constructor() { }
+  constructor(private datasvc: DataService) {  }
+
   ngOnInit() {
   }
 
@@ -20,6 +23,7 @@ export class ArticleComponent implements OnInit {
   ngDoCheck () {}
 
   deleteMe(item) {
-    this.delete.emit(item);
+    // this.delete.emit(item);
+    this.datasvc.deleteArticle(item);
   }
 }
