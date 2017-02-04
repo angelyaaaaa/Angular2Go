@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  keyword = '請輸入關鍵字';
+  keyword = '';
 
   doSearch(str) {
     this.keyword = str;
