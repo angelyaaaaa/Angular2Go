@@ -16,7 +16,6 @@ export class ArticleComponent implements OnInit {
   ngOnInit() {
   }
 
-
   deleteMe(item) {
     this.delete.emit(item);
   }
