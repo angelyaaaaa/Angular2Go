@@ -28,4 +28,8 @@ export class HeaderComponent implements OnInit {
   copyRightWarning(e) {
     alert('this is XXX right');
   }
+
+  highlightClass() {
+    return {'highlight': true, 'active': this.count%2 == 0};
+  }
 }
