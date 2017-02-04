@@ -9,7 +9,8 @@ export class AppComponent {
   title = 'app works!';
   keyword = '請輸入關鍵字';
 
-  showKeyword() {
-    console.log();
+  doSearch(str) {
+    this.keyword = str;
+    console.log(this.keyword);
   }
 }
