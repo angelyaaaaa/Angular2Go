@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  keyword = '請輸入關鍵字';
+
+  showKeyword() {
+    console.log();
+  }
 }
